@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HUGNEP+1tVQeAjUjoMld/3C1eXppSHm2J59ME+W9sHthHFYzw5DluZWRRL4vdbooug7RCZounCPIwRDmaj8lsA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\fadyy\\AppData\\Roaming\\UiPath\\Plugins\\Nuget\\Development\\com.uipath.studio.projecttemplates.UiPath.Template.REFramework\\",
+  "expectedPackageFiles": [
+    "C:\\Users\\fadyy\\.nuget\\packages\\uipath.template.reframework\\23.4.2\\uipath.template.reframework.23.4.2.nupkg.sha512"
+  ],
+  "logs": []
+}

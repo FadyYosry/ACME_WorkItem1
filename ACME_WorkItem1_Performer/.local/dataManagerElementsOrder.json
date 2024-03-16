@@ -1,0 +1,359 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strState&Sequence_1",
+        "strComment&Sequence_1",
+        "strTotalAmount&Sequence_1",
+        "strAccountAmount&Sequence_1",
+        "strAccountNumber&Sequence_1",
+        "strClientID&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_10",
+        "strUserName&Sequence_11",
+        "sstrUserPassword&Sequence_11",
+        "boolInvalidCredentials&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System1/ACME_System1_Login.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_1",
+        "boolValidPrecondition&Sequence_5",
+        "boolACMEIsLoggedIn&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutM",
+        "in_intTimeoutS",
+        "in_credACMEAccount",
+        "out_boolInvalidCredentials"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System1/ACME_System1_NavigateToURL.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_strClientURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_arrProcessesNames"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System1/ACME_System1_ScrapeAccountDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolValidPostcondition&Sequence_14",
+        "strAccountInfoDetails&Sequence_6",
+        "strFileName&Sequence_1",
+        "boolValidPrecondition&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_strAccountAmount",
+        "out_strAccountNumber",
+        "out_strClientID",
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutM",
+        "in_intDelayS"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_LaunchApplication.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_1",
+        "boolValidPostcondition&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strAppPath",
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutM",
+        "in_intDelayS"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_1",
+        "boolValidPrecondition&Sequence_5",
+        "boolValidPostcondition&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutL",
+        "in_intTimeoutM",
+        "in_intTimeoutS",
+        "in_intDelayS"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_LoginApplication.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_1",
+        "boolValidPrecondition&Sequence_5",
+        "boolValidPostcondition&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_credACMEAccount",
+        "in_intTimeoutL",
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutM",
+        "in_intDelayS"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_ClickToSearchByClientID.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_1",
+        "boolValidPrecondition&Sequence_5",
+        "boolValidPostcondition&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutL",
+        "in_intTimeoutM",
+        "in_intDelayS"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_SearchByClientID.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_1",
+        "boolValidPrecondition&Sequence_5",
+        "boolValidPostcondition&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strClientID",
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutL",
+        "in_intTimeoutM"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_ClickClientAccounts.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strFileName&Sequence_1",
+        "boolValidPrecondition&Sequence_5",
+        "boolValidPostcondition&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutL",
+        "in_intTimeoutM"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_ClickSpecificAccount.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolValidPrecondition&Sequence_16",
+        "strFileName&Sequence_1",
+        "boolValidPostcondition&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_strAccountNumber",
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutL",
+        "in_intTimeoutM"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_CalculateTransactions.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strAllTransactions&Sequence_14",
+        "strFileName&Sequence_1",
+        "boolValidPrecondition&Sequence_5",
+        "boolValidPostcondition&Sequence_7"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_intTotalAmount",
+        "in_intRetryNumber",
+        "in_tspRetryInterval",
+        "in_intTimeoutL",
+        "in_intTimeoutM"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_CloseAccountsMovement.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_CloseAcountMovement1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System1/ACME_System1_OpenUpdateWorkItem.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strUpdateWorkItemURL&Sequence_3",
+        "boolUpdateWorkItem&Sequence_5"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_intRetryNumbers",
+        "in_tsRetryInterval",
+        "in_strWorkItemURL"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
